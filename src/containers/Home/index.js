@@ -1,8 +1,8 @@
 import React from "react";
-import { Homestyles, HomeIcons, HomeIcon, PortfolioButton,
+import { Homestyles, HomeIcons, HomeIcon, PortfolioButton, BodyImage, LangButtons, 
     Portfolio, PortfolioElements, BodyText, GreetingText, Name , HireButton} from './styles';
     import logo from '../../assets/GitHub.png';
-    import profile from '../../assets/profileimage.png';
+    import profilepic from '../../assets/developer.svg';
 
 class Home extends React.Component {
 
@@ -13,16 +13,19 @@ class Home extends React.Component {
                 <Portfolio>
                     <PortfolioElements>Portfolio</PortfolioElements>
                 </Portfolio>
-                {/* <HomeNav>
-                    <HomeNavElements>About</HomeNavElements>
+                {/* <LangButtons> */}
+                    {/* <HomeNavElements>About</HomeNavElements>
                     <HomeNavElements>Portfolio</HomeNavElements>
-                    <HomeNavElements>Contact</HomeNavElements>
-                </HomeNav> */}
+                    <HomeNavElements>Contact</HomeNavElements> */}
+                    {/* <li>EN</li><li>|</li>
+                    <li>ES</li>  */}
+                {/* </LangButtons> */}
             </Homestyles>
             <BodyText>
+                <div>
                 <GreetingText>Hello, I am</GreetingText>
-                <Name>Anuj <br/> Boddu</Name>
-                <p>A young UX/UI Designer with crazy for mobile & web design.</p>
+                <Name>Anuj Boddu</Name>
+                <p>A young <span>UX/UI</span> Designer with crazy for mobile & web design.</p>
                 <h4>Find Me on</h4>
                 <HomeIcons>
                 <HomeIcon>
@@ -34,10 +37,17 @@ class Home extends React.Component {
                 </HomeIcons>
                 <HireButton>Hire Me</HireButton>
                 <PortfolioButton>Portfolio</PortfolioButton>
-            </BodyText>
-            <div>
-                <img src = {profile} />
                 </div>
+                <BodyImage>
+                <img src = {profilepic} width= "100%" display= "inline-block"/>
+                </BodyImage>
+                {/* <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul> */}
+            </BodyText>
             </div> 
 
         )
