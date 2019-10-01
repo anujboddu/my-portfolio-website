@@ -1,10 +1,33 @@
 import styled from 'styled-components';
 
 
-export const Homestyles = styled.div`
+
+export const Container = styled.div`
 display: flex;
-margin-bottom: 50px;
+flex-direction: column;
+background-color: #0F0C38;
+
+// @media only screen and (min-width: 768px) {
+//     .col {
+//         width: 8.33%;
+//     }
+//     .col-3 {
+//         width: 25%;
+//     }
+// }
 `;
+
+export const HomePage = styled.div`
+display: flex;
+flex-direction: column;
+max-width: 100%;
+padding: 25px;
+
+@media only screen and (max-width: 769px) {
+    text-align: center;
+    padding: 0px;
+}
+`
 
 export const HomeNav = styled.ul`
 margin-left: auto;
@@ -15,9 +38,14 @@ font-size: 13px;
 `;
 
 export const Portfolio = styled.div`
-margin-left: 52px;
-font-family: Apple Chancery;
-font-size: 3rem;
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script&display=swap");
+font-family: 'Dancing Script', cursive;
+font-size: 26px;
+margin-bottom: 50px;
+
+h1 {
+    margin: 0px;
+}
 `;
 
 export const PortfolioElements = styled.h4`
@@ -33,12 +61,18 @@ cursor: pointer;
   }
 `;
 
-export const BodyText = styled.div`
+export const Profile = styled.div`
 display: flex;
+flex-direction: row;
 max-width: 1448px;
 margin: auto;
 font-family: Avenir;
 font-weight: lighter;
+
+
+@media only screen and (max-width: 769px) {
+    flex-direction: column-reverse;
+}
 
 h3 {
     margin: 0;
@@ -53,6 +87,10 @@ p{
     margin-bottom: 50px;
     padding-bottom: 0px;
     color: white;
+
+    @media only screen and (max-width: 769px) {
+        font-size: 26px;
+    }
 }
 
 span {
@@ -72,12 +110,13 @@ font-size: 30px;
 font-family: Avenir;
 font-weight: lighter;
 padding: 0px;
-margin-bottom: 29px;
+margin-bottom: 0px;
 }
 `;
 
 export const Name = styled.div`
-font-family: Arial;
+@import url('https://fonts.googleapis.com/css?family=Ramabhadra&display=swap');
+font-family: 'Ramabhadra', sans-serif;
 font-size: 6rem;
 font-weight: bold;
 color: white;
@@ -103,6 +142,11 @@ color: white;
 cursor: pointer;
 font-family: Arial;
 font-size: 15px;
+
+@media only screen and (max-width: 769px) {
+    margin-bottom: 18px;
+    width: 250px;
+  }
 `;
 
 export const PortfolioButton = styled.button`
@@ -117,7 +161,9 @@ background-color: #0F0C38;
 border: 1px solid #E3DFF1
 font-family: Arial;
 font-size: 15px;
-
+@media only screen and (max-width: 769px) {
+    width: 250px;
+  }
 `;
 
 export const HomeIcons = styled.div`
@@ -135,6 +181,13 @@ export const BodyImage = styled.div`
 margin: auto;
 width: 50%;
 padding-left: 15px;
+
+@media only screen and (max-width: 769px) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-left: 0px;
+}
 `;
 
 export const LangButtons = styled.ul`
