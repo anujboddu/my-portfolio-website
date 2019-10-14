@@ -1,27 +1,22 @@
 import styled from 'styled-components';
-
+import profilepic from '../../assets/anuj-10.jpg';
 
 
 export const Container = styled.div`
+width: 100%;
+height: 100%;
 display: flex;
 flex-direction: column;
 background-color: #0F0C38;
-
-// @media only screen and (min-width: 768px) {
-//     .col {
-//         width: 8.33%;
-//     }
-//     .col-3 {
-//         width: 25%;
-//     }
-// }
 `;
 
 export const HomePage = styled.div`
 display: flex;
 flex-direction: column;
-max-width: 100%;
 padding: 25px;
+max-width: 1248px;
+margin: auto;
+justify-content: space-between;
 
 @media only screen and (max-width: 769px) {
     text-align: center;
@@ -80,11 +75,13 @@ h3 {
 }
 
 p{
+    @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+    font-family: 'Titillium Web', sans-serif;
     margin: 0;
     font-size: 36px;
     line-height: 1.25;
     max-width: 600px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     padding-bottom: 0px;
     color: white;
 
@@ -98,10 +95,11 @@ span {
 }
 
 h4 {
-    margin-bottom: 15px;
+    margin-right: 15px;
     font-family: verdana;
     font-weight: normal;
     font-size: 24px;
+    margin: 0px 15px 0px 0px;
 }
 `;
 
@@ -115,8 +113,8 @@ margin-bottom: 0px;
 `;
 
 export const Name = styled.div`
-@import url('https://fonts.googleapis.com/css?family=Ramabhadra&display=swap');
-font-family: 'Ramabhadra', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+font-family: 'Merriweather', serif;
 font-size: 6rem;
 font-weight: bold;
 color: white;
@@ -143,6 +141,12 @@ cursor: pointer;
 font-family: Arial;
 font-size: 15px;
 
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 769px) {
     margin-bottom: 18px;
     width: 250px;
@@ -161,6 +165,12 @@ background-color: #0F0C38;
 border: 1px solid #E3DFF1
 font-family: Arial;
 font-size: 15px;
+
+a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
 @media only screen and (max-width: 769px) {
     width: 250px;
   }
@@ -169,7 +179,13 @@ font-size: 15px;
 export const HomeIcons = styled.div`
 display: flex;
 width: 400px;
-margin-bottom: 38px;
+margin-bottom: 25px;
+align-items: center;
+@media only screen and (max-width: 769px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 40px auto;
+  }
 `;
 
 export const HomeIcon = styled.div`
@@ -178,15 +194,24 @@ cursor: pointer;
 `;
 
 export const BodyImage = styled.div`
-margin: auto;
+// margin: auto;
+// width: 300px;
+// padding-left: 15px;
+// background-image : url(${profilepic});
+// background-size: contain;
+// height: 350px;
+// background-repeat: no-repeat;
+// margin-left: 75px;
+display: block;
 width: 50%;
-padding-left: 15px;
-
+text-align: center;
+padding: 10px;
 @media only screen and (max-width: 769px) {
-    width: 100%;
+    width: 200px;
     text-align: center;
     margin-bottom: 10px;
     padding-left: 0px;
+    margin: auto;
 }
 `;
 
