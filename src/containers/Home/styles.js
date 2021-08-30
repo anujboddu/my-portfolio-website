@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
 display: flex;
 flex-direction: column;
-background-color: #0F0C38;
+background-color: ##282A33;
 
 // @media only screen and (min-width: 768px) {
 //     .col {
@@ -17,16 +17,26 @@ background-color: #0F0C38;
 // }
 `;
 
+export const JobTitle = styled.div`
+writing-mode: vertical-rl;
+text-orientation: mixed;
+}
+`
+
 export const HomePage = styled.div`
 display: flex;
 flex-direction: column;
 max-width: 100%;
-padding: 25px;
+// padding: 25px;
 
 @media only screen and (max-width: 769px) {
     text-align: center;
     padding: 0px;
 }
+`
+export const IntroText = styled.div`
+margin: 300px 100px;
+max-width: 30%;
 `
 
 export const HomeNav = styled.ul`
@@ -64,7 +74,7 @@ cursor: pointer;
 export const Profile = styled.div`
 display: flex;
 flex-direction: row;
-max-width: 1448px;
+// max-width: 1665px;
 margin: auto;
 font-family: Avenir;
 font-weight: lighter;
@@ -106,7 +116,7 @@ h4 {
 `;
 
 export const GreetingText = styled.h2`
-font-size: 30px;
+font-size: 70px;
 font-family: Avenir;
 font-weight: lighter;
 padding: 0px;
@@ -131,11 +141,19 @@ font-size: 24px;
 font-weight: normal;
 `;
 
+
+export const Summary = styled.div`
+color: #74767A;
+padding: 0px 0px 25px 0px;
+`;
+
+
+
 export const HireButton = styled.button`
-border-radius: 30px;
+// border-radius: 30px;
 margin-right: 14px;
-height: 53px;
-width: 145px;
+height: 43px;
+width: 160px;
 background-color: #ED4630;
 border: none;
 color: white;
@@ -157,7 +175,7 @@ width: 145px;
 border: none;
 color: white;
 cursor: pointer;
-background-color: #0F0C38;
+background-color: ##282A33;
 border: 1px solid #E3DFF1
 font-family: Arial;
 font-size: 15px;
@@ -178,7 +196,9 @@ cursor: pointer;
 `;
 
 export const BodyImage = styled.div`
-margin: auto;
+position: relative;
+// margin-left: auto;
+left 17px;
 width: 50%;
 padding-left: 15px;
 
@@ -202,3 +222,67 @@ li {
     cursor: pointer;
 }
 `
+export const HamburgerBar = styled.div`
+width: 100px;
+right: 20px
+`
+export const HamburgerBackground = styled.div`
+height: 78px;
+background-color: red;
+`
+
+export const TitleMain = styled.div`
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+font-family: 'Source Sans Pro', sans-serif;
+font-size: 50px;
+margin: 300px 0px
+`
+
+export const styles = {
+    bmBurgerButton: {
+      position: 'fixed',
+      width: '36px',
+      height: '30px',
+      right: '36px',
+      top: '36px'
+    },
+    bmBurgerBars: {
+      background: '#373a47'
+    },
+    bmBurgerBarsHover: {
+      background: '#a90000'
+    },
+    bmCrossButton: {
+      height: '24px',
+      width: '24px'
+    },
+    bmCross: {
+      background: '#bdc3c7'
+    },
+    bmMenuWrap: {
+      position: 'fixed',
+      height: '100%'
+    },
+    bmMenu: {
+      background: '#373a47',
+      padding: '2.5em 1.5em 0',
+      fontSize: '1.15em'
+    },
+    bmMorphShape: {
+      fill: '#373a47'
+    },
+    bmItemList: {
+      color: '#b8b7ad',
+      padding: '0.8em'
+    },
+    bmItem: {
+      display: 'inline-block'
+    },
+    bmOverlay: {
+      background: 'rgba(0, 0, 0, 0.3)'
+    },
+    bmBurgerBars :{
+        background: '#FFFFFF',
+        height: '5%'
+    }
+  }
