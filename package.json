@@ -51,6 +51,6 @@
     "babel-preset-stage-0": "6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "fs-extra": "^8.1.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.21"
   }
 }
